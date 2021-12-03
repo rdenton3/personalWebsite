@@ -3,3 +3,57 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* setting font and color preferences */
+:root {
+    --text-color: rgb(201, 124, 93);
+    --text-family: Georgia, 'Times New Roman', Times, serif;
+    --back-color: rgb(255, 241, 230);
+    --size-text: 22px;
+    --margin: 20px 20px 20px 20px;
+    --spacing: 2px
+}
+/* setting webpage background color */
+html {
+    background-color: var(--back-color);
+}
+
+/* formatting header */
+header, nav ul li a {
+    color: var(--text-color);
+    font-family: var(--text-family);
+    margin: var(--margin);
+}
+header{
+    font-size: var(--size-text);
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: var(--spacing);
+    border-bottom: 3px solid rgb(201, 124, 93, .5);
+    padding-bottom: 20px;
+    vertical-align: text-bottom;
+}
+
+header h1 {
+    font-weight: 400;
+    font-style: italic;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: var(--size-text);
+    padding: 20px;
+
+}
+
+nav a:hover {
+    text-shadow: 0 0 .9px var(--text-color),0 0 .9px var(--text-color);
+}
+
+
+

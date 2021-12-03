@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 /* setting font and color preferences */
 :root {
     --text-color: rgb(201, 124, 93);
@@ -11,29 +10,30 @@
     --back-color: rgb(255, 241, 230);
     --size-text: 22px;
     --margin: 20px 20px 20px 20px;
-    --spacing: 2px
+    --spacing: 2px;
+    --bottom-border:3px solid rgb(201, 124, 93, .5);
 }
 /* setting webpage background color */
 html {
     background-color: var(--back-color);
 }
-
-/* formatting header */
-header, nav ul li a {
+/* applying universal themes */
+header, nav ul li a, section {
     color: var(--text-color);
     font-family: var(--text-family);
     margin: var(--margin);
+    font-size: var(--size-text);
 }
+/* formatting header */
 header{
     font-size: var(--size-text);
     display: flex;
+    align-items: center;
     justify-content: space-between;
     letter-spacing: var(--spacing);
-    border-bottom: 3px solid rgb(201, 124, 93, .5);
+    border-bottom: var(--bottom-border);
     padding-bottom: 20px;
-    vertical-align: text-bottom;
 }
-
 header h1 {
     font-weight: 400;
     font-style: italic;
@@ -43,17 +43,39 @@ nav ul {
     display: flex;
     justify-content: space-between;
 }
-
 nav a {
     text-decoration: none;
-    font-size: var(--size-text);
     padding: 20px;
-
 }
-
 nav a:hover {
     text-shadow: 0 0 .9px var(--text-color),0 0 .9px var(--text-color);
 }
+/* end header styling */
 
+/* Styling the about section */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-img img{
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    flex-basis: 30%;
+}
+.about-text h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: var(--bottom-border);
+}
+.about-text {
+    font-size: 24px;
+    flex-wrap: wrap;
+    text-align: justify;
+    letter-spacing: var(--spacing);
+    padding: 20px;
+    flex-basis: 70%;
+}
 
 

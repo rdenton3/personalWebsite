@@ -64,7 +64,7 @@ nav a:hover {
     height: auto;
     flex-basis: 30%;
 }
-.about-text h2 {
+.about-text h2, .work-pt1 h2 {
     text-align: center;
     margin-bottom: 25px;
     border-bottom: var(--bottom-border);
@@ -77,5 +77,31 @@ nav a:hover {
     padding: 20px;
     flex-basis: 70%;
 }
+/* end about section styling */
+
+/* start work styles section */
+.work-pt1 {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.work-img1 img {
+    flex-basis: 30%;
+    width: 100%;
+    border-radius: 10px;
+}
+/* .work-pt1 img {
+    max-width: 100%;
+    max-height: ;
+    border-radius: 10px;
+    flex-basis: 40%;
+    position: relative;
+    opacity: .7;
+  }
+   */
+  /* .work-pt1 img:hover {
+    opacity: 1;
+} */
+
 
 
